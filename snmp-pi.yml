@@ -1,0 +1,32 @@
+---
+- name: Install cowsay and figlet
+  hosts: raspberrypis
+
+  tasks:
+    - name: Install required system packages
+      apt: 
+        pkg: 
+          - figlet
+          - cowsay
+          - jq
+          - git
+          - tmux
+          - fzf
+          - bat
+          - mc
+          - exa
+          - htop
+          - atop
+          - curl
+          - lynx
+          - wget
+          - ripgrep
+          - python3-pip
+          - virtualenv
+          - lftp
+          - snmp
+          - snmpd
+        state: latest
+        update_cache: true
+        
+       
