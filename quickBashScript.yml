@@ -7,5 +7,5 @@
     # You can also use the 'cmd' parameter instead of free form format.
     - name: This command will change the working directory to somedir/
       ansible.builtin.shell:
-        cmd: ls -l | grep log
+        cmd: ls -l | grep py
         chdir: /home/pi/
